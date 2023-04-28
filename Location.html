@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Home Page</title>
+    <link rel="stylesheet" type="text/css" href="Home page.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="home page.html" class="my-link"></a>Home</a></li>
+				<li><a href="Location.html" class="my-link">Location</a></li>
+				<li><a href="Favorites.html" class="my-link">Favorites</a></li>
+				<li><a href="About us.html"class="my-link">About Us</a></li>
+				<li><a href="Latest news.html"class="my-link">Latest News</a></li>
+            </ul>
+        </nav>
+     
+    </header>
+    <div style="position: relative;">
+        <a href="https://www.google.com/maps/search/comic+book+store/@-26.1323437,27.8606407,12z/data=!3m1!4b1">Click to display map</a>
+      </div>
+      
+    <img src="Background.jpg" alt="Background">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYzyU-zuTeRx-jmDW4BbMba8ft7UAogRA&callback=initMap"></script>
+
+    <footer>
+        <p>Jaryd Sawyer 20230166 SLD521</p>
+    </footer>
+    <script>
+        var links = document.getElementsByClassName("my-link");
+        for (var i = 0; i < links.length; i++) {
+          links[i].onclick = function() {
+            alert("You clicked a link!");
+          };
+        }
+        </script>
+
+</body>
+</html>
